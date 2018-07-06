@@ -1,1 +1,14 @@
-
+server:
+  port: 8090
+spring:
+  application:
+    name: api-gateway
+logging:
+  config: classpath:log4j2_dev.xml
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+env:
+  test50
